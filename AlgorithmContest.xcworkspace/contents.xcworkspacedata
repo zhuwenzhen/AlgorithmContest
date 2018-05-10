@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ch4_function_and_recursion/ch4_function_and_recursion.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ch3_array_string/ch3_array_string.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ch2/ch2.xcodeproj">
+      location = "group:/Users/wenzhen/Desktop/AlgorithmContest/ch2/ch2_loop.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ch1/ch1.xcodeproj">

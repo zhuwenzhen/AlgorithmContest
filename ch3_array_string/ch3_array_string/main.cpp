@@ -69,12 +69,36 @@ void snakeMatrix() {
     }
     cout << endl;
 }
+// Example 3-3: MultiplicationVisual
+// abc * de
 
-
-
+// Example 3-4: Longest Palindrome String
+#include <ctype.h>
+void longestPalindromeString() {
+    int n, m = 0, max = 0;
+    char buf[MAXN] = "madam I'm adam";
+    char s[MAXN];
+    
+    n = (int) strlen(buf);
+    for (int i = 0; i < n; i++) {
+        if (isalpha(buf[i])) s[m++] = tolower(buf[i]);
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = i; j < m; j++) {
+            int ok = 1;
+            for (int k = i; k <= j; k++) {
+                if (s[k] != s[i+j-k]) ok = 0;
+            }
+            if (ok && j-i+1 > max) max = j-i+1;
+        }
+    }
+    cout << "max = " << max << endl;
+}
 
 int main(int argc, const char * argv[]) {
     // light();
-    snakeMatrix();
+    // snakeMatrix();
+    longestPalindromeString();
     return 0;
 }
