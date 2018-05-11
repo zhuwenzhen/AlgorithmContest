@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ch6-basic-data-structure/ch6-basic-data-structure.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ch5_basic_problems/ch5_basic_problems.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ch4_function_and_recursion/ch4_function_and_recursion.xcodeproj">
    </FileRef>
    <FileRef

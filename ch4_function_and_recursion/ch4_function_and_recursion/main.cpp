@@ -84,7 +84,7 @@ void test_swap() {
 
 // recursion
 int factorial (int n) {
-    return n == 0 ? 1 : f(n-1)*n;
+    return n == 0 ? 1 : factorial(n-1)*n;
     // a ? b : c
     // if a is true: do b, else do c.
 }
